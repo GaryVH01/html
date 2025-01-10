@@ -7,17 +7,21 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-family: "Montserrat", serif;
-
 }
 
-
 body {
-  background-color: #000000;
-  color: #fff;
+  color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgb(253, 208, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 208, 47, 1) 0%,
+    rgba(253, 253, 254, 1) 50%,
+    rgba(253, 208, 47, 1) 100%
+  );
 }
 
 main {
@@ -63,7 +67,7 @@ h3 {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .row {
@@ -109,7 +113,7 @@ h3 {
 
 .menu li a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   font-size: 25px;
 }
@@ -174,8 +178,6 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: rgb(253, 208, 47);
-  background: linear-gradient(90deg, rgba(253, 208, 47, 1) 0%, rgba(253, 253, 254, 1) 50%, rgba(253, 208, 47, 1) 100%);
 }
 
 .banner-shop {
@@ -224,7 +226,6 @@ h3 {
   border: 1px solid #fff;
   padding: 10px;
   gap: 10px;
-
 }
 
 .categories-card img {
@@ -248,7 +249,9 @@ h3 {
 }
 
 /* -------- Availability (SHOP) ----------*/
-
+.availability-title {
+  align-self: flex-start;
+}
 
 .availability-cards-card {
   display: flex;
@@ -260,10 +263,6 @@ h3 {
   height: auto;
   padding: 10px;
   gap: 10px;
-}
-
-.availability h3 {
-  color: black
 }
 
 .availability-cards-card img {
@@ -286,25 +285,35 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   gap: 20px;
-  background: rgb(253, 208, 47);
-  background: linear-gradient(90deg, rgba(253, 208, 47, 1) 0%, rgba(253, 253, 254, 1) 50%, rgba(253, 208, 47, 1) 100%);
+  margin: 20px 0;
+}
+
+.slider-title {
+  align-self: flex-start;
 }
 
 .slider-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
   width: 18em;
   height: 35em;
-  padding: 10px;
-  gap: 10px;
   background-color: #fff;
+  padding: 20px;
+  position: relative;
 }
 
-.slider-card-like {
+.slider-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.slider-card-head i {
   justify-content: center;
   color: #000;
   background-color: #d5d5d5;
@@ -312,21 +321,35 @@ h3 {
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
-  align-self: flex-start;
+}
+
+.slider-card-head span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #fdd544;
+  padding: 5px;
+  font-size: 16px;
 }
 
 .slider-card img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  padding: 50px
 }
 
+.slider-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .slider-card-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   color: black;
 }
 
@@ -351,6 +374,7 @@ h3 {
   font-size: 20px;
   cursor: pointer;
   padding: 10px 20px;
+  font-weight: 600;
 }
 
 .main-title {
@@ -358,9 +382,6 @@ h3 {
   font-size: 50px;
   margin: 80px 0px 20px 0px;
 }
-
-
-
 
 .cards {
   display: flex;
@@ -382,7 +403,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
   border-radius: 10px;
   padding: 10px;
   margin: 20px 0px;
@@ -398,9 +419,6 @@ h3 {
   height: 200px;
   object-fit: cover;
 }
-
-
-
 
 .news {
   margin: 40px 0;
@@ -433,6 +451,10 @@ h3 {
 
 .news i {
   font-size: 100px;
+}
+
+.DIY {
+  background-color: #fff;
 }
 
 /*--------FOOTER--------*/
@@ -521,7 +543,6 @@ h3 {
 
 /* ----------Affichage sur Tablette---------*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
-
   /* Styles */
   .logo {
     width: 150px;
@@ -610,14 +631,14 @@ h3 {
   }
 
   .nav-mobile {
-    z-index: 20;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     width: 100%;
     height: 28vh;
-    position: fixed;
+    position: absolute;
     top: 0;
   }
 
