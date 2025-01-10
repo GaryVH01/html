@@ -33,8 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  text-align: center;
+  font-size: 24px;
   margin: 40px 0px;
 }
 
@@ -62,6 +61,12 @@ h3 {
   width: 20vw;
 }
 
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: #000000 solid 1px;
+}
+
 .separator::after {
   content: "";
   display: block;
@@ -82,6 +87,14 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.inverse-row {
+  flex-direction: row-reverse;
+}
+
+.inverse-column {
+  flex-direction: column-reverse;
 }
 
 /*------------HEADER-------------- */
@@ -132,7 +145,7 @@ h3 {
 
 .burger-icon {
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 20px;
   font-size: 30px;
   cursor: pointer;
@@ -151,20 +164,48 @@ h3 {
 }
 
 .header-icons-search,
-.header-icons-cart {
+.header-icons-cart,
+.header-icons-heart {
   cursor: pointer;
 }
 
-/* .search-icon {
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-} */
+.header-icons-heart:hover {
+  color: #f23fa7;
+}
 
-/* .search-icon i {
+.header-icons-cart:hover {
+  color: #ffffff;
+}
+
+.header-icons-cart:hover,
+.header-icons-heart:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.header-icons-search {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.header-icons-search i {
+  padding: 10px;
   color: #000000;
-} */
+}
+
+.header-icons-search input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 180px;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+}
 
 /*--------MAIN--------*/
 
@@ -175,12 +216,6 @@ h3 {
   padding: 20px 0px;
   display: flex;
   justify-content: space-between;
-}
-
-.copyright-logo {
-  width: 100px;
-  height: auto;
-  margin: 20px auto;
 }
 
 .footer-nav {
@@ -201,12 +236,23 @@ h3 {
 }
 
 .footer-nav-links li a:hover {
-  color: #fcdb01;
+  color: #ffffff;
 }
 
 .footer-nav-links li a {
   text-decoration: none;
   color: #000000;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.copyright-logo {
+  width: 100px;
+  height: auto;
 }
 
 .copyright-text {
@@ -229,7 +275,7 @@ h3 {
 }
 
 .social-media i:hover {
-  color: #fcdb01;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -255,6 +301,11 @@ h3 {
 /* ----------Affichage sur Tablette---------*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
   /* Styles */
+
+  .container {
+    margin: 20px 40px;
+  }
+
   .logo {
     width: 150px;
     height: auto;
@@ -277,7 +328,7 @@ h3 {
 
   .close-icon {
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 20px;
     font-size: 30px;
     cursor: pointer;
@@ -302,6 +353,14 @@ h3 {
     color: #000;
     font-weight: 500;
     font-size: 18px;
+  }
+
+  .header-icons {
+    font-size: 25px;
+  }
+
+  .header-icons-search input {
+    display: none;
   }
 
   .separator::after {
@@ -334,7 +393,6 @@ h3 {
   }
 
   .nav-mobile {
-    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,6 +432,19 @@ h3 {
     color: #000;
   }
 
+  .header-icons {
+    font-size: 20px;
+  }
+
+  .header-icons-search i {
+    padding: 10px;
+    color: #000000;
+  }
+
+  .header-icons-search input {
+    display: none;
+  }
+
   .separator::after {
     display: none;
   }
@@ -402,7 +473,10 @@ h3 {
     margin: 20px auto;
   }
 
-  .quicklinks ul li {
-    font-size: 14px;
+  .footer-nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

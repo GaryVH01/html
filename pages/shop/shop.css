@@ -1,3 +1,4 @@
+/* -------- Banner (SHOP) ----------*/
 .shop {
   display: flex;
   flex-direction: column;
@@ -44,12 +45,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 40px 5px;
   width: 10em;
   height: auto;
   border: 1px solid #fff;
   padding: 10px;
   gap: 10px;
+}
+
+.categories-card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .categories-card img {
@@ -64,15 +71,19 @@
   color: #000;
 }
 
+/* -------- Availability (SHOP) ----------*/
+
+.availability {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .availability-cards {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  max-width: 80%vw;
 }
-
-/* -------- Availability (SHOP) ----------*/
 .availability-title {
   align-self: flex-start;
 }
@@ -112,6 +123,8 @@
   height: auto;
   gap: 20px;
   margin: 20px 0;
+  max-width: 1600px;
+  position: relative;
 }
 
 .slider-title {
@@ -157,7 +170,15 @@
   font-size: 16px;
 }
 
-.slider-card img {
+.slider-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+}
+.slider-card-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -201,14 +222,48 @@
   font-weight: 600;
 }
 
+.arrow-mobile {
+  display: none;
+}
+
+/* -------- DIY(SHOP) ----------*/
+
 .DIY {
   background-color: #fff;
 }
 
+/* ------------ BREAKPOINTS ---------------*/
 /* ----------Affichage sur Tablette---------*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  .categories {
+    flex-wrap: wrap;
+  }
 }
 
 /* ------------Affichage sur mobile-------------*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+
+  .availability-cards {
+    flex-direction: column;
+  }
+
+  .slider {
+    overflow: hidden;
+  }
+
+  .slider-card {
+    display: flex;
+    flex: 1 0 100%;
+  }
+
+  .arrow-mobile {
+    display: none;
+  }
+
+  .shop {
+    overflow: hidden;
+  }
 }

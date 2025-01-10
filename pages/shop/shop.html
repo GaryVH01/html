@@ -33,6 +33,17 @@
           <li><a href="/pages/contact/contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-icons">
+        <div class="header-icons-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="search" type="text" placeholder="rechercher..." />
+        </div>
+        <div class="header-icons-heart"><i class="fa-solid fa-heart"></i></div>
+        <div class="header-icons-cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </div>
+      </div>
       <nav class="nav-mobile">
         <div class="close-icon"><i class="fa-solid fa-xmark"></i></div>
         <ul class="menu-mobile">
@@ -41,16 +52,6 @@
           <li><a href="/pages/contact/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-icons">
-        <div class="header-icons-search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <i class="fa-solid fa-heart"></i>
-        <div class="header-icons-cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span>0</span>
-        </div>
-      </div>
     </header>
     <!-- Main -->
     <main>
@@ -65,6 +66,8 @@
           </div>
           <img class="banner-shop-img" src="/img/lego-tudor.png" alt="" />
         </div>
+
+        <!-- CATEGORIES -->
         <div class="categories">
           <div class="categories-card">
             <img
@@ -110,8 +113,8 @@
           </div>
         </div>
         <div class="container">
-          <h2 class="availability-title">Disponible</h2>
           <div class="availability">
+            <h2 class="availability-title">Disponible</h2>
             <div class="availability-cards">
               <div class="availability-cards-card">
                 <img
@@ -152,18 +155,36 @@
       </section>
       <section>
         <div class="container">
-          <h2 class="slider-title">Ensembles en vedette</h2>
+          <div>
+            <h2 class="slider-title">Ensembles en vedette</h2>
+          </div>
           <div class="slider">
+            <!-- <div class="arrow-mobile">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div> -->
             <div class="slider-card">
               <div class="slider-card-head">
                 <i class="fa-regular fa-heart"></i>
                 <span>Exclusivité</span>
               </div>
-              <img
-                class="slider-card-img"
-                src="/img/concorde.webp"
-                alt="image vectorielle d'une brique de construction LEGO"
-              />
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 200px;
+                  height: 200px;
+                  background-color: rgb(255, 255, 255);
+                "
+              >
+                <img
+                  class="slider-card-img"
+                  src="/img/cabine.webp"
+                  alt="image vectorielle d'une brique de construction LEGO"
+                />
+              </div>
+
               <div class="slider-card-icons">
                 <div>
                   <i class="fa-solid fa-cake-candles"></i> <span>+6</span>
@@ -173,7 +194,7 @@
                 </div>
                 <div><i class="fa-regular fa-star"></i> <span> 4.6</span></div>
               </div>
-              <h3 class="slider-card-title">Le concorde</h3>
+              <h3 class="slider-card-title">Cabine téléphonique</h3>
               <p class="slider-card-price">299,99€</p>
               <button class="slider-card-button">Ajouter au panier</button>
             </div>
@@ -183,11 +204,15 @@
                 <i class="fa-regular fa-heart"></i>
                 <span>Exclusivité</span>
               </div>
-              <img
-                class="slider-card-img"
-                src="/img/harry.webp"
-                alt="image vectorielle d'une brique de construction LEGO"
-              />
+              <div class="slider-card-img">
+                >
+                <img
+                  class="slider-card-img"
+                  src="/img/harry.webp"
+                  alt="image vectorielle d'une brique de construction LEGO"
+                />
+              </div>
+
               <div class="slider-card-icons">
                 <div>
                   <i class="fa-solid fa-cake-candles"></i> <span>+6</span>

@@ -69,12 +69,12 @@
   margin: 20px 80px;
   max-width: 500px;
   text-align: justify;
+  min-width: 300px;
 }
 
 .news-img {
-  width: 200px;
-  height: 200px;
-  margin: 20px 80px;
+  width: 30em;
+  height: auto;
 }
 
 .news i {
@@ -85,6 +85,26 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .title {
     font-size: 40px;
+  }
+  .news {
+    margin: 20px 20px;
+  }
+
+  .news p {
+    margin: 20px 20px;
+    max-width: 500px;
+    text-align: justify;
+    min-width: 300px;
+  }
+
+  .news h3 {
+    margin: 20px 20px;
+  }
+
+  .news-img {
+    width: 20em;
+    height: auto;
+    margin: 20px;
   }
 }
 
@@ -116,6 +136,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 0;
+  }
+
+  .news h3 {
+    margin: 20px 20px;
   }
 
   .news p {
