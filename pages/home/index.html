@@ -18,39 +18,39 @@
     <title>HTML CSS</title>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <img class="logo" src="/img/logo.png" alt="logo" />
-      <div class="burger-icon">
-        <i class="fa-solid fa-bars"></i>
+   <!-- Header -->
+   <header class="header">
+    <img class="logo" src="/img/logo.png" alt="logo" />
+    <div class="burger-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="/pages/home/index.html">Accueil</a></li>
+        <li><a href="/pages/shop/shop.html">Shop</a></li>
+        <li><a href="/pages/contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="header-icons-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="search" type="text" placeholder="rechercher..." />
       </div>
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="/pages/home/index.html">Accueil</a></li>
-          <li><a href="/pages/shop/shop.html">Shop</a></li>
-          <li><a href="/pages/contact/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-icons">
-        <div class="header-icons-search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input class="search" type="text" placeholder="rechercher...">
-        </div>
-        <i class="fa-solid fa-heart"></i>
-        <div class="header-icons-cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span>0</span>
-        </div>
+      <div class="header-icons-heart"><i class="fa-solid fa-heart"></i></div>
+      <div class="header-icons-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>3</span>
       </div>
-      <nav class="nav-mobile">
-        <div class="close-icon"><i class="fa-solid fa-xmark"></i></div>
-        <ul class="menu-mobile">
-          <li><a href="/pages/home/index.html">Accueil</a></li>
-          <li><a href="/pages/shop/shop.html">Shop</a></li>
-          <li><a href="/pages/contact/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    </div>
+    <nav class="nav-mobile">
+      <div class="close-icon"><i class="fa-solid fa-xmark"></i></div>
+      <ul class="menu-mobile">
+        <li><a href="/pages/home/index.html">Accueil</a></li>
+        <li><a href="/pages/shop/shop.html">Shop</a></li>
+        <li><a href="/pages/contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
     <!-- Main -->
     <main>
       <section>
@@ -63,8 +63,8 @@
           />
         </div>
       </section>
-        <h2>Rubriques</h2>
         <div class="container">
+          <h2 class="rubriques-title">Rubriques</h2>
           <div class="cards">
             <div class="card">
               <h3 class="card-title">LEGO Creator</h3>
@@ -136,7 +136,7 @@
       <div class="separator"></div>
       <section>
         <div class="container">
-          <h2>Nouveautés</h2>
+          <h2 class="news-heading">Nouveautés</h2>
           <div class="news">
             <img
               class="news-img"
@@ -166,7 +166,7 @@
             alt="image vectorielle d'une brique de construction LEGO"
           />
             <div>
-              <h3 class="nexs-title">Title 2</h3>
+              <h3 class="news-title">Title 2</h3>
               <p class="news-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus porro non ab consectetur quos obcaecati, eaque libero

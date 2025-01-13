@@ -1,31 +1,58 @@
 /* -------- Banner (SHOP) ----------*/
-.shop {
+/* .shop {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
+} */
 
 .banner-shop {
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  align-items: center;
-}
-
-.banner-shop-img {
-  width: 400px;
+  margin: 40px 0 0 0;
+  width: 100%;
   height: auto;
-  object-fit: cover;
-  margin: 100px 20px;
+  background-color: #551329;
+  max-height: 60vh;
+  /* animation: reveal linear 1s;
+  animation-timeline: view();
+  animation-range-start: contain 0%;
+  animation-range-end: contain 50%; */
 }
 
 .banner-shop-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-  color: black;
+  align-items: flex-start;
+  margin: 10px 20px;
+  width: 100%;
+}
+
+.banner-shop img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-shop-content-title {
+  margin: 20px 0 20px 40px;
+  font-size: 2.5vw;
+  max-width: 800px;
+}
+
+.banner-shop-content-subtitle {
+  margin: 20px 0 20px 40px;
+  font-size: 2vw;
+  max-width: 800px;
+}
+
+.banner-shop-content-title,
+.banner-shop-content-subtitle {
+  color: #fff;
+}
+
+.banner-shop-content button {
+  margin: 20px 0 20px 40px;
 }
 
 /* -------- Categories (SHOP) ----------*/
@@ -34,7 +61,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
   color: rgb(127, 62, 62);
   background-color: #ef9e42;
   gap: 20px;
@@ -83,9 +111,12 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin: 40px 0;
 }
 .availability-title {
   align-self: flex-start;
+  font-size: 2rem;
+  margin-top: 40px 0;
 }
 
 .availability-cards-card {
@@ -100,6 +131,16 @@
   gap: 10px;
 }
 
+.availability-cards-card span {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.availability-cards-card span:hover {
+  text-decoration: underline;
+}
+
 .availability-cards-card img {
   width: 100%;
   height: auto;
@@ -109,26 +150,38 @@
 .availability-cards-card p,
 .availability-cards-card span {
   text-align: center;
+  margin-top: 20px;
   font-size: 20px;
   color: black;
 }
 
 /* -------- Slider (SHOP) ---------- */
 
+.slider-section {
+  background-color: #ef9e42;
+}
+
 .slider {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: auto;
   gap: 20px;
-  margin: 20px 0;
+  margin: 40px 0;
   max-width: 1600px;
   position: relative;
+  overflow: hidden;
 }
 
 .slider-title {
   align-self: flex-start;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.slider-title h2 {
+  font-size: 2rem;
 }
 
 .slider-card {
@@ -141,6 +194,14 @@
   background-color: #fff;
   padding: 20px;
   position: relative;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+.slider-card:hover {
+  cursor: pointer;
+  /* transform: scale(1.05);
+  transition: 0.5s; */
 }
 
 .slider-card-head {
@@ -158,6 +219,13 @@
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.slider-card-head i:hover {
+  opacity: 1;
+  transform: rotate(1turn) scale(1.2);
+  color: red;
+  transition: 1s;
 }
 
 .slider-card-head span {
@@ -216,54 +284,312 @@
   border-radius: 30px;
   padding: 10px;
   color: #000;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   padding: 10px 20px;
   font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.slider-card-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* .preview {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #ef9e42;
+  opacity: 0;
+  transition: 0.5s;
+} */
+
+/* .preview i {
+  font-size: 80px;
+} */
 .arrow-mobile {
   display: none;
 }
 
 /* -------- DIY(SHOP) ----------*/
 
-.DIY {
+.diy {
   background-color: #fff;
+  padding: 60px 0;
 }
+
+.diy-title {
+  margin: 80px 100px 0 100px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.diy-subtitle {
+  text-align: center;
+  max-width: 50em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 40px 100px;
+  line-height: 150%;
+}
+.diy-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.diy-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 10px;
+  width: 20em;
+  height: auto;
+  gap: 10px;
+}
+
+.diy-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.diy-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.diy-card span {
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+/* .diy-card span::after {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  content: "";
+  z-index: 1;
+} */
 
 /* ------------ BREAKPOINTS ---------------*/
 /* ----------Affichage sur Tablette---------*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .categories {
     flex-wrap: wrap;
+    margin-top: 0;
+  }
+  /* 
+  .availability-title {
+    font-size: 1.8rem;
+  } */
+  .availability-cards-card p,
+  .availability-cards-card span {
+    font-size: 18px;
+  }
+
+  /* .slider-title {
+    font-size: 1.8rem;
+  } */
+
+  .slider {
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .slider-card {
+    display: flex;
+    flex: 1 0 48%;
+  }
+
+  .arrow-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #000;
+    z-index: 9999;
+    padding: 0 20px;
+  }
+
+  .arrow-mobile i {
+    cursor: pointer;
+    background-color: #ef9e42;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    opacity: 0.8;
+    color: white;
+  }
+
+  .arrow-mobile i:hover {
+    opacity: 1;
+  }
+
+  .diy-cards {
+    flex-wrap: wrap;
+  }
+
+  .diy-card {
+    width: 18em;
+  }
+
+  .diy-subtitle {
+    font-size: 1rem;
+    margin: 40px 100px;
+    line-height: 150%;
   }
 }
 
 /* ------------Affichage sur mobile-------------*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .banner-shop {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    max-height: 1000vh;
+  }
+
+  .banner-shop-content {
+    align-items: center;
+  }
+
+  .banner-shop img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .banner-shop-content-title {
+    font-size: 1.8rem;
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .banner-shop-content-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 305px;
+  }
+
+  .banner-shop-content button {
+    padding: 10px 20px;
+    margin: 15px auto;
+  }
+
   .categories {
+    margin-top: 0;
     flex-wrap: wrap;
+  }
+
+  .categories-card {
+    margin: 10px 0;
   }
 
   .availability-cards {
     flex-direction: column;
   }
 
+  .availability-cards-card p,
+  .availability-cards-card span {
+    font-size: 16px;
+  }
+
   .slider {
     overflow: hidden;
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+
+  .slider-title {
+    margin: 0;
   }
 
   .slider-card {
     display: flex;
     flex: 1 0 100%;
+    border-radius: 5px;
   }
 
   .arrow-mobile {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 30px;
+    color: #000;
+    z-index: 9999;
+    padding: 0 20px;
+  }
+
+  .arrow-mobile i {
+    cursor: pointer;
+    background-color: #ef9e42;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0.8;
+    color: white;
+  }
+
+  .arrow-mobile i:hover {
+    opacity: 1;
   }
 
   .shop {
     overflow: hidden;
+  }
+
+  .diy {
+    padding: 0;
+  }
+
+  .diy-title {
+    margin: 40px 10px;
+  }
+
+  .diy-card {
+    width: 22em;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+
+  .diy-card span {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .diy-title {
+    text-align: center;
+  }
+
+  .diy-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    margin: 30px 0;
+    line-height: 150%;
   }
 }

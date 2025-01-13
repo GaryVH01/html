@@ -29,16 +29,16 @@ main {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2rem;
   margin: 40px 0px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .container {
@@ -46,7 +46,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 60px;
+  margin: 0 60px;
 }
 
 .button {
@@ -59,6 +59,11 @@ h3 {
   cursor: pointer;
   margin: 20px 0px;
   width: 20vw;
+}
+
+.button-big {
+  margin: 20px 0px;
+  width: 30vw;
 }
 
 .button:hover {
@@ -303,7 +308,7 @@ h3 {
   /* Styles */
 
   .container {
-    margin: 20px 40px;
+    margin: 0 40px;
   }
 
   .logo {
@@ -371,6 +376,18 @@ h3 {
     height: 1px;
     background-color: #fff;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 /* ------------Affichage sur mobile-------------*/
@@ -379,12 +396,30 @@ h3 {
     padding: 0px;
   }
 
+  .button {
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0px;
+    width: 40vw;
+  }
+
+  .button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 solid 1px;
+  }
+
   .container {
-    margin: 20px 20px;
+    margin: 0 20px;
   }
 
   .logo {
-    width: 100px;
+    width: 80px;
     height: auto;
   }
 
@@ -433,8 +468,23 @@ h3 {
   }
 
   .header-icons {
-    font-size: 20px;
+    font-size: 18px;
+    gap: 10px;
+    margin: 0;
+    right: 5px;
   }
+
+  /* .header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-size: 30px;
+  } */
 
   .header-icons-search i {
     padding: 10px;
@@ -447,6 +497,18 @@ h3 {
 
   .separator::after {
     display: none;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
   }
 
   .footer {
