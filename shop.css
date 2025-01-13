@@ -1,19 +1,4 @@
 /* -------- Banner (SHOP) ----------*/
-/* .shop {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-} */
-
-.banner-shop {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0 0 0;
-  width: 100%;
-  height: auto;
-  background-color: #551329;
-  max-height: 60vh;
-}
 
 /* @keyframes reveal {
   from {
@@ -25,6 +10,16 @@
     opacity: 1;
   }
 } */
+
+.banner-shop {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 0 0;
+  width: 100%;
+  height: auto;
+  background-color: #551329;
+  max-height: 60vh;
+}
 
 .banner-shop-content {
   display: flex;
@@ -386,14 +381,6 @@
   margin: 10px;
 }
 
-/* .diy-card span::after {
-  background-color: black;
-  width: 200px;
-  height: 200px;
-  content: "";
-  z-index: 1;
-} */
-
 /* ------------ BREAKPOINTS ---------------*/
 /* ----------Affichage sur Tablette---------*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -401,18 +388,11 @@
     flex-wrap: wrap;
     margin-top: 0;
   }
-  /* 
-  .availability-title {
-    font-size: 1.8rem;
-  } */
+
   .availability-cards-card p,
   .availability-cards-card span {
     font-size: 18px;
   }
-
-  /* .slider-title {
-    font-size: 1.8rem;
-  } */
 
   .slider {
     overflow: hidden;

@@ -71,7 +71,7 @@ form .button {
 }
 
 .newsletter::after {
-  background-image: url(/img/newsletter.jpg);
+  background-image: url(./img/newsletter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
