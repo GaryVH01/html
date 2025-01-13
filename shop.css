@@ -13,11 +13,18 @@
   height: auto;
   background-color: #551329;
   max-height: 60vh;
-  /* animation: reveal linear 1s;
-  animation-timeline: view();
-  animation-range-start: contain 0%;
-  animation-range-end: contain 50%; */
 }
+
+/* @keyframes reveal {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+} */
 
 .banner-shop-content {
   display: flex;
